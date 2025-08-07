@@ -1,19 +1,14 @@
 #******************************************************************************
 # abc.py
 #******************************************************************************
-# Name: Eduardo Esteves
-#******************************************************************************
-# Overall notes (not to replace inline comments):
-#
-#
-#
+# Eduardo E
 
 
-################################################################################
-#
-# GCD function from class
-#
-################################################################################
+
+
+
+# GCD function 
+
 
 def gcd(m, n):
     while n != 0:
@@ -26,24 +21,24 @@ def gcd(m, n):
 
 
 def is_prime(a):
-    #initialize counter to count number of multiples
+    # Initialize counter to count the number of multiples
     counter = 0
     #loop to count number of multiples up to the number itself
     for number in range(1,a+1):
         if a%number == 0:
             counter += 1
             
-    #if the number ain't one and it has 2 multiples only it is prime
+    #if the number ain't one and it has 2 multiples only, it is prime
     if a>1 and counter == 2:
         return True
     
 
 def radical(a,b,c):
-    #turn arguments into a list, initialize empty list for found primes adn another list to put the unique values
+    #turn arguments into a list, initialize an empty list for found primes, and another list to put the unique values
     argument = [a,b,c]
     primes = []
     unique_primes = []
-    #double loop evaluates the multiples of the arguments and adds them into the primes list if prime
+    #double loop evaluates the multiples of the arguments and adds them to the primes list if prime
     for element in argument:
         for number in range(1,element + 1):
             if element%number == 0 and is_prime(number):
@@ -89,6 +84,7 @@ print(GCD_radical_count/GCD1_counter)
         
 
                 
+
 
 
     
